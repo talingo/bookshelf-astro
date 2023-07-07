@@ -1,33 +1,16 @@
 ---
-import BookItem from './BookItem.astro'
-
-const books = [
-    {
-        id: 'clean-code',
-        title: 'Clean Code: A Handbook of Agile Software Craftsmanship',
-        img: 'https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1436202607i/3735293.jpg'
-    },
-    {
-        id: 'the-clean-coder',
-        title: 'The Clean Coder: A Code of Conduct for Professional Programmers',
-        img:'https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1347470803i/10284614.jpg'
-    },
-    {
-        id: 'eloquent-javascript',
-        title: 'Eloquent JavaScript: A Modern Introduction to Programming',
-        img:'https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1308260856i/8910666.jpg'
-    }   
-]
+import BookItem from "./BookItem.astro";
+import { books } from '../data/books'
 ---
 
 <ul class="grid grid-cols-2 md:grid-cols-3 gap-3 px-4">
-   {
-    books.map(({id, title, img}) => {
-        return (
-            <li>
-            <BookItem id={id} title={title} img={img}/>    
-            </li>
-        )
+  {
+    books.map(({ id, title, img }) => {
+      return (
+        <li>
+          <BookItem id={id} title={title} img={img} />
+        </li>
+      )
     })
-   }
+  }
 </ul>
