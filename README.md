@@ -1,3 +1,6 @@
+# Preview
+![](https://github.com/talingo/bookshelf-astro/blob/main/assets/Animation.gif)
+
 # Astro Starter Kit: Basics
 
 ```
