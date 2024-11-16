@@ -1,11 +1,4 @@
-import { s as server_default } from './chunks/astro.3424cfa2.mjs';
-import 'html-escaper';
-import 'cookie';
-import 'kleur/colors';
-import '@astrojs/internal-helpers/path';
-import 'path-to-regexp';
-import 'mime';
-import 'string-width';
+import { s as server_default } from './chunks/astro.59bf61ab.mjs';
 
 const renderers = [Object.assign({"name":"astro:jsx","serverEntrypoint":"astro/jsx/server.js","jsxImportSource":"astro"}, { ssr: server_default }),];
 
